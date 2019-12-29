@@ -1,0 +1,55 @@
+/* 모꼬지 글자 크기 */
+.main-subject{
+    font-size: 300%;
+    color:#e85a71;
+}
+
+/* 로그인 요소들을 감싸는 박스*/
+.login-box{
+	text-align:center;
+    margin : 0 auto;
+    margin-top:10%;
+    border-radius: 10px;
+    width: 400px;
+    border: 2px solid #454552;
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* 입력부분 설정 */
+input{
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+}
+
+/* 버튼 설정 */
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* 버튼 아래 아이디찾기/비밀번호찾기/회원가입을 감싸는 박스 */
+.login-util-box{
+    display: flex;
+    justify-content: center;
+}
+
+/* 아이디 찾기, 비밀번호 찾기, 회원가입을 설정하는 부분 */
+.login-util-box > div{
+    font-size: 80%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#key:hover{
+    text-shadow: 1px 1px 3px gray;
+}

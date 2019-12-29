@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* 좌측 상단 메뉴 설정 부분*/
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.drop-main {
+	text-align: center;
+	position: relative;
+	width: 100px;
+	height: 30px;
+}
+
+.drop-sub {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #454552;
+	color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 3px 3px 5px black;
+	transform: translateY(-10rem);
+	transition: all 0.3s ease-in-out;
+}
+
+.drop-sub>li {
+	padding: 8px 0;
+}
+
+.drop-sub>li>a:hover {
+	color: #e85a71;
+}
+
+.drop-main:hover .drop-sub {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(-3rem);
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+/* 리스트 부분 */
+.list {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.list-item {
+	border: 2px solid #454552;
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	align-items: center;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.list-item-img {
+	border-radius: 5px;
+	width: 200px;
+	height: 130px;
+	margin: 10px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.list-item-textarea {
+	margin: 10px;
+	width: 600px;
+	text-align: start;
+}
+
+.list-item-title {
+	font-size: 200%;
+}
+
+.list-item-title:hover {
+	color: #e85a71;
+}
+
+.list-item-term {
+	font-size: 120%;
+	color: #4ea1d3;
+}
+
+.list-item-location {
+	font-size: 120%;
+}
+
+
+/* 오른쪽 하단 버튼 */
+.move-top-page {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+}

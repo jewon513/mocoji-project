@@ -1,0 +1,187 @@
+@font-face {
+	font-family: 'yg-jalnan';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: yg-jalnan;
+}
+
+.container {
+	width: 978px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.main-subject {
+	color: #e85a71;
+	font-size: 500%;
+	margin: 0;
+	margin-top: 5%;
+}
+
+.sub {
+	line-height: 50%;
+	margin: 40px;
+	font-size: 200%;
+	color: #4ea1d3;
+}
+
+/* 좌측 상단 메뉴 설정 부분*/
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.drop-main {
+	text-align: center;
+	position: relative;
+	width: 100px;
+	height: 30px;
+}
+
+.drop-sub {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #454552;
+	color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 3px 3px 5px black;
+	transform: translateY(-10rem);
+	transition: all 0.3s ease-in-out;
+	z-index: 10;
+}
+
+.drop-sub>li {
+	padding: 8px 0;
+}
+
+.drop-sub>li>a:hover {
+	color: #e85a71;
+}
+
+.drop-main:hover .drop-sub {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(-3rem);
+	transition-delay: 0s, 0s, 0.3s;
+	z-index: 10;
+}
+
+/* 우측 상단 로그인 버튼 부분 */
+#login {
+	width: 100px;
+	height: 30px;
+	margin: 14px 0;
+}
+
+/* 리스트 부분 */
+.list {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.list-item {
+	border: 2px solid #454552;
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	align-items: center;
+}
+
+
+.list-item-img {
+	border-radius: 20px;
+	width: 350px;
+	height: 250px;
+	display: block;
+	margin: 30px auto;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.list-item-textarea {
+	margin: 10px;
+	width: 600px;
+	display: block;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.list-item-title {
+	font-size: 200%;
+}
+
+.list-item-title:hover{
+	color: #e85a71;
+}
+
+.list-item-term {
+	font-size: 120%;
+	color: #4ea1d3;
+}
+
+.list-item-location {
+	font-size: 120%;
+}
+
+/* swiper */
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 15px;
+	background: inherit;
+	/* Center slide text vertically */
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}

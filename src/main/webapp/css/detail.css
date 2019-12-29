@@ -1,0 +1,256 @@
+/* 오른쪽 상단 로그인 부분 메인에 있음*/
+
+/* 대표이미지와 옆에 정보를 둘러싸는 Div */
+.jewon-main-header{
+	margin-bottom: 80px;
+}
+
+.intro {
+	width: 100%;
+	text-align: start;
+}
+
+.picture {
+	width: 100%;
+}
+
+.map {
+	width: 100%;
+}
+
+.lodgments {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.comment {
+	border-radius: 5px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+/* 제목 하단 축제 대표 이미지 박스*/
+.img-box {
+	border-radius: 10px;
+	width: 450px;
+	height: 350px;
+	margin: 10px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+/* 사진 왼쪽 제목, 기간, 장소 부분 */
+.side-title {
+	border-radius: 10px;
+	width: 450px;
+	margin: 10px;
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+}
+
+.side-title>h1 {
+	margin: 0;
+	font-size: 250%;
+}
+
+.side-title>h2 {
+	margin: 2px 0;
+}
+
+.go-list {
+	background-color: #454552;
+	background-size: auto;
+	display: block;
+	border-radius: 5px;
+	width: max-content;
+	padding: 10px 20px;
+	color: white;
+	font-size: 150%;
+}
+
+.go-list:hover{
+	color:#e85a71;
+	
+}
+
+.tab-menu {
+	margin-top: 100px;
+	width: 100%;
+	border-bottom: 2px solid #f2f2f2;
+	display: flex;
+}
+
+.tab-sub {
+	background-color: #454552;
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 14px 30px;
+}
+
+.tab-sub:hover{
+	color:#e85a71;
+}
+
+#btn-active {
+	color: #454552;
+	background-color: #f2f2f2;
+}
+
+#btn-active:hover{
+	color:#e85a71;
+}
+
+/* 사진 파트 */
+/* 나중에 사진 넣으실 때 div가 아니라 img 태그를 이용해서 넣어주세요. div에 background 걸면 비율 맞추기 힘드실거에요.*/
+#dumi-picture {
+	background-color: gray;
+	border-radius: 10px;
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+/* 숙소 부분 */
+.lodgment {
+	margin-top: 20px;
+	width: 450px;
+	height: 350px;
+	text-align: start;
+}
+
+.lodgment:hover{
+	cursor: pointer;
+	color:#e85a71;
+}
+
+.lodgment-img {
+	border-radius: 5px;
+	width: 100%;
+	height: 250px;
+	margin: 0;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.lodgment-introduce {
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.lodgment-price {
+	color: #e85a71;
+}
+
+/* 의견 부분 */
+#comment-box {
+	border-radius: 10px;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px gray;
+	box-sizing: border-box;
+	padding: 10px;
+	color:inherit;
+}
+
+#comment-box:hover{
+	cursor: pointer;
+}
+
+/* 코멘트 글쓰기 부분 */
+
+.comment-box {
+	border-radius: 10px;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+
+
+.comment-sub-box {
+	text-align: cetner;
+	width: 90%;
+	display: flex;
+	align-items: center;
+}
+
+.comment-sub-box-title {
+	width: 20%;
+	flex : 0 1 20%;
+}
+
+.comment-sub-box-text {
+	text-align: start;
+	width: 80%;
+	flex : 0 1 80%;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: inherit;
+	font-family: inherit;
+	resize: none;
+	outline: none;
+}
+
+fieldset {
+	margin-top: 10px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 5px gray;
+	text-align: center;
+}
+
+.comment-input{
+	padding: 0 20px;
+	box-sizing: border-box;
+	background-color: #f8f8f8;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+}
+
+button.btn_writecomment {
+	background-color: #454552;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: inherit;
+	border-radius: 10px;
+	outline: none;
+}
+
+button.btn_writecomment:hover {
+	color: #e85a71;
+}
+
+/* 오른쪽 하단 버튼 */
+.move-top-page {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+}
+
+footer{
+	margin-top : 100px;
+}

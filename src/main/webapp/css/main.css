@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'yg-jalnan';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'yg-jalnan';
+	color: #454552;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e85a71;
+	text-decoration: none;
+}
+
+#btn-ham {
+	margin: 10px;
+	cursor: pointer;
+}
+
+#btn-login {
+	margin: 10px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+#btn-logout{
+	margin: 10px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.jewon-username{
+}
+
+#jewon-main-title {
+	margin-top: 20px;
+	color: #e85a71;
+	font-size: 400%;
+}
+
+#jewon-main-subtitle {
+	color: #4ea1d3;
+	font-size: 200%;
+}
+
+.jewon-main-header {
+	margin-bottom: 30px;
+}
+
+/* side bar 부분 */
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -250px;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+    /* search-ticker 부분 */
+
+    @charset "UTF-8";
+    @keyframes tickerv {
+        0%   {margin-top: 0;}
+        20%  {margin-top: -26px;}
+        40%  {margin-top: -52px;}
+        60%  {margin-top: -78px;}
+        80%  {margin-top: -104px;}
+        100% {margin-top: 0;}
+    }
+    .search-text {
+        height: 25px;
+        box-sizing: content-box;
+        overflow: hidden;
+    } 
+    .search-text ul {
+        padding:0;
+        margin:0;
+        list-style-type: none;
+        animation-name: tickerv;
+        animation-duration:10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(1, 0, .5, 0);
+    }
+    .search-text ul:hover {
+        animation-play-state: paused;
+    }
+    .search-text ul li {
+        font-size:18px;
+        line-height: 26px
+    }
+
+
+#jewon-search-box {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	padding: 10px;
+	width: 400px;
+	border: 2px solid #454552;
+	border-right: none;
+	border-left: none;
+}
+
+/* 리스트 부분 */
+.jewon-list {
+	margin: 60px 0;
+}
+
+.jewon-list-item {
+	border: 2px solid #454552;
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	align-items: center;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.jewon-list-item-img {
+	border-radius: 5px;
+	width: 200px;
+	height: 130px;
+	margin: 10px;
+	box-shadow: 2px 2px 5px gray;
+	flex: 0 0 200px;
+}
+
+.jewon-list-item-textarea {
+	margin: 10px;
+	text-align: start;
+}
+
+.jewon-list-item-title {
+	font-size: 200%;
+}
+
+.jewon-list-item-title:hover {
+	color: #e85a71;
+}
+
+.jewon-list-item-term {
+	font-size: 120%;
+	color: #4ea1d3;
+}
+
+.jewon-list-item-location {
+	font-size: 120%;
+}
+
+.jewon-page{
+	margin-bottom: 50px;
+}
+
+.selectedpage{
+	color:#e85a71;
+}
